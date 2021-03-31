@@ -50,6 +50,5 @@ TEST_CASE("INVALID INPUT - READ") {
     CHECK_THROWS(myBoard.read(5,-1,Direction::Horizontal,2));
     CHECK_THROWS(myBoard.read(-5,0,Direction::Vertical,2));
     CHECK_THROWS(myBoard.read(5,-12,Direction::Vertical,6));
-
 }
 

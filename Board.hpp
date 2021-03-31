@@ -1,17 +1,19 @@
 #include "Direction.hpp"
 using ariel::Direction;
 #include <string>
-#include <vector> 
+#include <map>
+
 using namespace std;
 
 namespace ariel{
     class Board
     {
     private:
-        vector<unsigned int> board;
+        typedef pair<unsigned int, unsigned int> location;
+        map<location,char> myBoard;
 
     public:
-        Board(/* args */);
+        Board();
       //  ~Board();
 
         void post(unsigned int row, unsigned int column, Direction direction, string s);
